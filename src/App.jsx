@@ -10,6 +10,7 @@ import {useState} from "react"
 function App()
 {
   const [fruit, setFruit] = useState("Mango")
+  const [disply, setDisplay] = useState(true)
 
   const  setFruitName = () => {
     setFruit("Banana")
@@ -24,6 +25,14 @@ function App()
           <button onClick={setFruitName}>change fruit name</button>
           {/* <SetComponent/> */}
           <SetComponent_2/>
+
+          <h1>Toggle in React js</h1>
+
+          <button onClick={()=>setDisplay(!disply)}>Toggle</button>
+
+          {
+             disply ? <h4>Sujal Mane</h4> : null
+          }
     </div>
     
   )
