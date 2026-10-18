@@ -180,5 +180,13 @@
   &::after {
     right: 0;
     border-right-color: var(--border);
+    
   }
+}
+
+.button_style{
+  gap: 10px;
+  flex: auto;
+  border:2px solid white;
+  
 }
